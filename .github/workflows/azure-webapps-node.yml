@@ -53,4 +53,5 @@ jobs:
 
     - name: deploy to s3
       run: |
-        aws s3 cp dist/angular-docker s3://tajamar-s3-abde/ --recursive
+        aws s3 cp dist/angular-docker/browser s3://tajamar-s3-abde/ --recursive
+        aws s3 cp dist/ s3://tajamar-s3-abde/ --recursive
